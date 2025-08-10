@@ -27,10 +27,10 @@ const App = () => {
     dispatch(GetData())
   }, [dispatch])
   if (loading) {
-    return <h1>...loading</h1>
+    return <h1 className="flex text-center items-center justify-center mt-[300px] font-black text-blue-500 text-[50px]">Loading...</h1>
   }
   if (error) {
-    return <h1>Error!</h1>
+    return <h1 className="flex text-center items-center justify-center mt-[300px] font-black text-[50px]">Error</h1>
   }
   function showEdit(e) {
     setEditModal(true);
